@@ -1758,6 +1758,7 @@ qpic_nand_onfi_probe(struct mtd_info *mtd)
 
 	/* Check for onfi string */
 	id = (uint32_t*)onfi_str;
+	printf("ONFI ID:%x", onfi_str);
 	if (*id != ONFI_SIGNATURE) {
 		printf("Not an ONFI device\n");
 		/* Not an onfi device. Return error. */
