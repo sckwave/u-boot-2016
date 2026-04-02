@@ -1759,12 +1759,12 @@ qpic_nand_onfi_probe(struct mtd_info *mtd)
 	/* Check for onfi string */
 	id = (uint32_t*)onfi_str;
 	printf("ONFI ID:%x", *id);
-	/*if (*id != ONFI_SIGNATURE) {
-		printf("Not an ONFI device\n");*/
+	if (*id != ONFI_SIGNATURE) {
+		printf("Not an ONFI device\n");
 		/* Not an onfi device. Return error. */
-		/*onfi_ret = NANDC_RESULT_DEV_NOT_SUPPORTED;
+		onfi_ret = NANDC_RESULT_DEV_NOT_SUPPORTED;
 		goto qpic_nand_onfi_probe_err;
-	}*/
+	}
 
 	printf("ONFI device found\n");
 	/* Now read the param page */
