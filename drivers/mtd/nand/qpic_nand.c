@@ -788,7 +788,7 @@ qpic_nand_fetch_id(struct mtd_info *mtd)
 
 	/* Read the id */
 	id = qpic_nand_read_reg(NAND_READ_ID, BAM_DESC_UNLOCK_FLAG);
-
+	id = 0x1590acc2;
 	dev->id = id;
 	dev->vendor = id & 0xff;
 	dev->device = (id >> 8) & 0xff;
