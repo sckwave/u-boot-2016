@@ -160,7 +160,8 @@ jobs:
             echo "================================================"
             echo "Building U-Boot for IPQ type: $ipq_type"
             echo "================================================"
-            ./build.sh "$ipq_type"
+            #./build.sh "$ipq_type"
+            ./build.sh ipq807x_ap8220
           done
 
       # 10. Package U-Boot files
