@@ -302,6 +302,7 @@ extern loff_t board_env_size;
 #define CONFIG_USB_MAX_CONTROLLER_COUNT         2
 #endif
 #define CONFIG_CMD_FAT
+#define CONFIG_SUPPORT_VFAT
 
 #define PCI_MAX_DEVICES	2
 #ifdef CONFIG_PCI_IPQ
