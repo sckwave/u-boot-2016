@@ -304,6 +304,7 @@ extern loff_t board_env_size;
 #define CONFIG_CMD_FAT
 #define CONFIG_SUPPORT_VFAT
 #define CONFIG_FS_FAT
+#define CONFIG_FS_EXT4
 
 #define PCI_MAX_DEVICES	2
 #ifdef CONFIG_PCI_IPQ
