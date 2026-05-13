@@ -171,7 +171,7 @@ static int set_fs_bootargs(int *fs_on_nand)
 	int ret = 0;
 	char boot_args[MAX_BOOT_ARGS_SIZE] = {'\0'};
 
-
+/*
 
 #define nand_rootfs "ubi.mtd=" QCA_ROOT_FS_PART_NAME " root=mtd:ubi_rootfs rootfstype=squashfs"
 
@@ -268,9 +268,9 @@ static int set_fs_bootargs(int *fs_on_nand)
 	} else {
 		printf("bootipq: unsupported boot flash type\n");
 		return -EINVAL;
-	}
+	}*/
 
-	return 0;
+	return 1;
 }
 
 int config_select(unsigned int addr, char *rcmd, int rcmd_size)
