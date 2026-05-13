@@ -166,12 +166,12 @@ static int update_bootargs(void *addr)
  */
 static int set_fs_bootargs(int *fs_on_nand)
 {
-	char *bootargs;
+/*	char *bootargs;
 	unsigned int active_part = 0;
 	int ret = 0;
 	char boot_args[MAX_BOOT_ARGS_SIZE] = {'\0'};
 
-/*
+
 
 #define nand_rootfs "ubi.mtd=" QCA_ROOT_FS_PART_NAME " root=mtd:ubi_rootfs rootfstype=squashfs"
 
